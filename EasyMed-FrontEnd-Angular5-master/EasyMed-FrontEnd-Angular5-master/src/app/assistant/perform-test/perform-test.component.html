@@ -1,0 +1,40 @@
+<div id="sign-up" class="container-fluid">
+  
+    <div class="container">
+    <div class="row">
+    <div class="card col-lg-8 ml-auto auth-form">
+      <div class="card-body">
+    
+    <h3 class="text-center">Perform Endoscopy</h3>
+    
+    <p *ngIf="errorMessage" class="error alert alert-danger" role="alert">
+      <i class="fa fa-exclamation-circle"></i>
+      {{ errorMessage }}
+    </p>
+  
+        <form name='frm'>
+          <label for="email">Enter Email</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                  </div>
+                </div>
+            <input type="text" name="email" [(ngModel)]="email" class="form-control" placeholder="Email">
+            </div>
+          
+        
+        <button class="btn btn-success btn-block auth" type="submit" (click)=performEndoscopy()>Perform Endoscopy</button>
+        </form>
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>Cancel and go back?
+          <a [routerLink]="['/assistant']">Back</a>
+        </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>

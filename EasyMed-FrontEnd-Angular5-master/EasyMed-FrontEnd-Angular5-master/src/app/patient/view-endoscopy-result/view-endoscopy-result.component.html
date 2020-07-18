@@ -1,0 +1,45 @@
+
+
+<div id="sign-up" class="container-fluid">
+  
+    <div class="container">
+    <div class="row">
+    <div class="card col-lg-8 ml-auto auth-form">
+      <div class="card-body">
+    
+    <h3 class="text-center">Wireless Capsule Endoscopy</h3>
+    
+      <form name='frm'>
+      <div>
+        
+        <div>
+            <ngb-carousel class="myclass">
+                <ng-template *ngFor="let image of images" ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <img [src]='image' alt="Random first slide" class="w-100">
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+        <div>
+          <b>White portion displays lesion : </b>
+      </div>
+        <div>
+            <h3>Lesion Percentage : </h3>{{this.testResult}}
+        </div>
+        
+      </div>
+      
+    </form>
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>Cancel and go back?
+          <a [routerLink]="['/patient']">Back</a>
+        </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>

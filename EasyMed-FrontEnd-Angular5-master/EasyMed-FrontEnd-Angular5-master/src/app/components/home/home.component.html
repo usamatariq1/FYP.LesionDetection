@@ -1,0 +1,105 @@
+<nav class="navbar fixed-top navbar-expand-sm navbar-light shadow">
+  <a class="navbar-brand" [routerLink]="['/']"><b><i>EasyLab</i></b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" [routerLink]="['/signup']">Sign Up</a>
+          <a class="nav-item nav-link" [routerLink]="['/login']">Login</a>
+      </div>
+  </div>
+</nav>
+
+
+<div id="home-container" class="container-fluid">
+    <!-- Carousel -->
+    <div class="carousel-bg">
+    <div id="introCarousel" class="carousel slide shadow" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#introCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#introCarousel" data-slide-to="1"></li>
+            <li data-target="#introCarousel" data-slide-to="2"></li>
+          </ol>
+      
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="text-center col-12 col-md-6 offset-md-3">
+                  <h2>EasyLab- A Lab Appointment System</h2>
+                  <!-- <a class="btn btn-primary" role="button" aria-pressed="true" [routerLink]="['/signup']">Sign Up</a> -->
+                </div>  
+              </div>
+              <div class="carousel-item">
+                <div class="text-center col-12">
+                  <h2>Available 24/7</h2>
+                </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="text-center col-12">
+                    <h2>Lesion Detection in Wireless Capsule Endoscopy</h2>
+                  </div>  
+              </div>
+        </div>
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+          <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <section id="info-container" class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h5>This project consists of two divions</h5>
+          <hr>
+          <p class="info-description text-justify"><h6>First devision</h6> First division consists of an online appointment
+            system for lab where a person creates an account have opportunity to check different tests available, view their detail, book appointments online, check 
+            details of his appointments and edit it when required, check his log and receive results online. He can also manage his profile.
+            Admin can View, Add, Delete, Edit Lab Assistants and Tests available by the lab.
+            Lab Assistant can View Appointments and Users details, confirm their appointments on their arrival to lab at test time.<h6>Second devision</h6>Second 
+            division of te project is a test i.e. Wireless Capsule Endoscopy that is prformed through the system by lab assistant, thus removing the need of the doctor to view lengthy videos 
+            and detect lesion in them. Lesion is detected in the data received through wireless capsule endoscopy and resultant images in greyscale,where white portion displays
+            lesion in the images, and the lesion percentage in the images is displayed to the relevant person along side resultant images.
+        </div>
+      </div>
+      <div class="row info-blocks">
+        <div class="col-12 col-sm-6 col-md-3 block shadow">
+          <i class="fa fa-check-circle"></i>
+          <h3>Available 24/7</h3>
+          <div class="block-text-hidden">
+            <p>Our services are available 24/7
+              Feel free to book an appointment any time
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 block shadow">
+            <i class="fa fa-check-circle"></i>
+            <h3>User-Friendly</h3>
+            <div class="block-text-hidden">
+              <p>Simple to use user interface for efficient flow</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 block shadow">
+              <i class="fa fa-check-circle"></i>
+              <h3>MongoDB</h3>
+              <div class="block-text-hidden">
+                <p>Stores all data in the MongoDB.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 block shadow">
+                <i class="fa fa-check-circle"></i>
+                <h3>Prediction</h3>
+                <div class="block-text-hidden">
+                  <p>Lesion detection using CNN</p>
+                </div>
+            </div>
+      </div>
+    </section>
+</div>
+    <footer class="container-fluid">
+    </footer>
